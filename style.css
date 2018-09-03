@@ -68,12 +68,40 @@
 	background:none !important;
 	border: 1px solid #fff !important;
 	color: #fff;
-}.a1 {
+}
+.a1 {
+	display: inline-block;
 	font-size:350%;
 	color: white;
 	font-weight: bold;
 	padding-top: 140px
 }
+/*.a1.bukvica:first-letter :hover{
+	transition: top 1s linear 0.5s;
+	transform: matrix(2, 0, 0, 2, 150, 150);
+	color: red;
+}*/
+.bukvica{
+	display: inline-block;
+	font-family: sans-serif;
+	color:white;
+	font-style: 150%;
+	font-weight: bold;
+	animation: super1 2s linear infinite;
+	}
+	@keyframes super1{
+	25% { transform:scale(2) ; color: red;}
+    50% { transform:scale(-2); color: blue; }
+    50% { left: calc(100%); }
+  
+}
+
+	.bukvica:hover{
+	transition: top 1s linear 1.5s;
+	transform: matrix(2, 0, 0, 2, 150, 150);
+	color: red;
+
+	}
 #bb{width: 180px;
 	color: white;
 	border-radius: 1.3em;
@@ -87,10 +115,22 @@
 	margin-bottom: 40px;
 }
 .a2{
+	display: inline-block;
 	margin: 25px 0px;
 	word-spacing: 5px;
 	letter-spacing: 3px;
 	color:green;
+}
+.img-ecco{
+	width: 10%;
+	height: auto;
+	border-radius: 50%;
+	animation: super 5s linear infinite;
+}
+@keyframes super{
+	50% { transform:-180deg;}
+    50% { transform: rotate(180deg) ; }
+    100% { left: calc(100% ) ; }
 }
 
 .a3{
@@ -131,12 +171,6 @@ li .trio1{
 	border: 1px solid green !important;
 	border-radius: 1.3em;
 }*/
-.trio1{
-	background-color: grey;
-}
-.trio2{
-	background-color: #cbeccb;
-}
 btn-group-toggle .trio1:hover{
 	text-decoration: none;
 	color: #ffffff;
@@ -183,7 +217,7 @@ a .red{
 p{
 	font-size: 110%;
 }
-.GAK{
+#GAK{
 	background-color: #52559c42;
 	border-radius: 1.3em;
 }
@@ -250,6 +284,30 @@ p{
 	margin:0;  
 	border-radius: 3.5em;
 }
+#bb8{
+	width: 120px;
+	height: auto;
+	color: white;
+	background-color:#ddd;
+	margin:0;  
+	border-radius: 3.5em;
+}
+#bb5{
+	color: white;
+	background-color:grey; 
+	border-top-left-radius: 1.3em;
+	border-bottom-left-radius: 1.3em;
+}
+#bb7{
+	color: white;
+	background-color:red; 
+	border-top-right-radius: 1.3em;
+	border-bottom-right-radius: 1.3em;
+}
+#bb6{
+	color: white;
+	background-color:#ffc107; 
+}
 .anons{
 	background-color:#16de169e;
 }
@@ -302,7 +360,4 @@ margin-bottom: 8%;
 	background-color:green;
 	height: 30px;
 	color: white;
-}
-input .form-control{
-	background-color: transparent;
 }
