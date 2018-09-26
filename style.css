@@ -1,9 +1,15 @@
+body {
+  overflow-x: hidden; 
+}
 #topbanner{
 	background:url(img/fon.jpg) no-repeat fixed;
 	background-size: cover;
 	width:scale;
 	height: 650px;
 	
+}
+#banner{
+	background-color: green;
 }
 .banner-searsh{
 	margin-top: 5%;
@@ -75,7 +81,7 @@
 	font-size:350%;
 	color: white;
 	font-weight: bold;
-	padding-top: 140px
+	padding-top: 10%;
 }
 /*.a1.bukvica:first-letter :hover{
 	transition: top 1s linear 0.5s;
@@ -103,17 +109,22 @@
 	color: red;
 
 	}
-#bb{width: 180px;
+#bbT{width: 25%;
 	color: white;
 	border-radius: 1.3em;
 }
+#bb{width: 55%;
+	color: white;
+	border-radius: 1.3em;
+}
+
 .bb2{
-	width: 180px;
+	width: 25%;
+	height:auto;
 	border-radius: 1.3em;
 	color: white;
 	background-color: transparent;
-	position: relative;
-	top: 880%;
+	margin-top: 17%;
 	
 }
 .a2{
@@ -128,6 +139,9 @@
 	height: auto;
 	border-radius: 50%;
 	animation: super 5s linear infinite;
+}
+.img-eat{
+	border: none;
 }
 @keyframes super{
 	50% { transform:-180deg;}
@@ -185,12 +199,12 @@ margin-top: 60px;
 .buttons {border-top-left-radius:1.3em;
 	border-bottom-left-radius:1.3em; }
 #bb3,.bb3{
-	width: 210px;
+	width: 30%;
 	border-radius: 1.3em;
 	color: white;
 	background-color: green;
-	margin-top: 20px;
-	margin-bottom: 20px;  
+	margin-top: 5%;
+	margin-bottom: 5%;  
 }
 
 a .red{
@@ -247,11 +261,13 @@ p{
 }
 .img-Fl{
 	margin: 0;
+	border: none;
 }
 .img-FlA{
 	margin: 0;
 	width:50%;
 	height: 50%;
+	border:none;
 }
 #TEAM{
 	background-color: #75ea75;
@@ -296,7 +312,7 @@ p{
 	border-radius: 3.5em;
 }
 #bb8{
-	width: 120px;
+	width: 60%;
 	height: auto;
 	color: white;
 	background-color:#ddd;
@@ -371,4 +387,16 @@ margin-bottom: 8%;
 	background-color:green;
 	height: 30px;
 	color: white;
+}
+.img-bb7{
+	border: none;
+	width: 80%;
+	height: auto;
+	margin: 0;
+}
+.img-bb8{
+	border: none;
+	width: 33.3%;
+	height: auto;
+	margin: 0;
 }
